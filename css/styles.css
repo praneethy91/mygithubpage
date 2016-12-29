@@ -48,6 +48,31 @@ hr {
     text-align: center;
 }
 
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+ }
+ .social {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+ }
+
+ footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #107896;
+ }
+
+ .icon-social {
+    padding: 0px 10px;
+    color: #fff;
+ }
+
 /* Media queries default sizes for bootstrap 3.3.7*/
 @media (max-width:767px) {
     .title-logo {
