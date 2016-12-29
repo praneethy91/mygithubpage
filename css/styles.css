@@ -30,6 +30,18 @@ hr {
     border-radius: 5px;
 }
 
+.hover-project {
+    position: absolute;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+}
+
+.hover-project:hover {
+    opacity: 0.8;
+}
+
 /* Media queries default sizes for bootstrap 3.3.7*/
 @media (max-width:767px) {
     .title-logo {
