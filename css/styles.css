@@ -15,14 +15,47 @@ hr {
 }
 
 .text-thin {
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .title-logo {
-    max-width: 100px;
-    margin-top: 20px;
+    max-width: 80px;
+    margin-top: 15px;
 }
 
-.title-super {
-    font-size: 40px;
+.image-project {
+    background-color: #829356;
+    box-shadow: 5px 5px 5px grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.intro-section {
+
+}
+
+/* Media queries default sizes for bootstrap 3.3.7*/
+@media (max-width:480px) {
+    .title-super, .title-works {
+        font-size: 20px;
+    }
+
+    .title-sub, .title-project {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:767px) {
+    .title-logo {
+        max-width: 50px;
+    }
+}
+
+@media (min-width:768px) {
+}
+
+@media (min-width:992px) {
+}
+
+@media (min-width:1200px) {
 }
