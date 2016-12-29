@@ -41,16 +41,6 @@
     </div>
     <div class="row text-center">
       <div class="col-md-4 col-sm-6">
-        <a data-toggle="modal" data-target="#project1">
-          <div class="hover-project">
-            <img class="img-responsive center-block image-project" src="img/hover.png">
-          </div>
-          <img class="img-responsive center-block image-project" src="img/project1.png">
-        </a>
-        <h3 class= "title-project">Machine Learning: News Article Classification</h3>
-        <p><a href="https://github.com/praneethy91/websearchenginesnyu/releases/tag/v10.0.0-ML">GitHub</a></p>
-      </div>
-      <div class="col-md-4 col-sm-6">
         <a data-toggle="modal" data-target="#project2">
           <div class="hover-project">
             <img class="img-responsive center-block image-project" src="img/hover.png">
@@ -59,6 +49,16 @@
         </a>
         <h3 class="title-project">Information retrieval: Web Search Engine</h3>
         <p><a href="https://github.com/praneethy91/websearchenginesnyu/releases/tag/v2.0.0-hw3">GitHub</a></p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <a data-toggle="modal" data-target="#project1">
+          <div class="hover-project">
+            <img class="img-responsive center-block image-project" src="img/hover.png">
+          </div>
+          <img class="img-responsive center-block image-project" src="img/project1.png">
+        </a>
+        <h3 class= "title-project">Machine Learning: News Article Classification</h3>
+        <p><a href="https://github.com/praneethy91/websearchenginesnyu/releases/tag/v10.0.0-ML">GitHub</a></p>
       </div>
       <div class="col-md-4 col-sm-6">
         <a data-toggle="modal" data-target="#project3">
@@ -73,55 +73,113 @@
     </div>
   </div>
   <!-- Modal -->
-  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel">Machine Learning: News Article Classification</h4>
-              </div>
-              <div class="modal-body">
-                  <img class="img-responsive" src="img/project1.png">
-                  This was my first project in this class. I learned a lot about HTML and CSS.
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- Modal -->
   <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel">Information retrieval: Web Search Engine</h4>
-              </div>
-              <div class="modal-body">
-                  <img class="img-responsive" src="img/project2.png">
-                  This was my first project in this class. I learned a lot about HTML and CSS.
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-          </div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Information retrieval: Web Search Engine</h>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/project2.png">
+          <ul class="modal-list">
+            <li>
+               Implemented a Web search engine which has these following components - Front-end (for text output and HTML output of the results), Ranker(compared various ranker modes like cosine similarity vector-space model, query probability likelihood model etc), Indexer(Inverted index and the compressed version of it).
+            </li>
+            <li>
+               Indexed a very large Wikipedia dump in the search engine. The ranking of results was on top it when user issued a query.
+            </li>
+            <li>
+               Had various evaluation metrics for evaluting the performance of the ranker's ranking of articles.
+            </li>
+            <li>
+               Implemented a document processor which parses and extracts tokens and normalizes it based on stopwords and performed stemming. Query processor normalizes the query too.
+            </li>
+            <li>
+               Significant challenges were overcome in building a large index and utilized very low memory eventually and using index merging algorithms to merge multiple huge indexes on the disk.
+            </li>
+            <li>
+               Ranking was heavily optimized to get the best results efficiently.
+            </li>
+            <li>
+              Also Implemented a PageRank metric along with a relevance metric which utilizes the hyperlink structure in the Wikipedia corpus.
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Machine Learning: News Article Classification</h3>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/project1.png">
+          <ul class="modal-list">
+            <li>
+               This advanced component was built on top of the web search engine project.
+            </li>
+            <li>
+               Implemented web crawling on major news websites with URL normalization techniques to create a huge corpus to rank upon and to classify articles into categories dynamically using a trained machine learning model, like arts, health, science, entertainment, politics etc.
+            </li>
+            <li>
+               Implemented targeted crawling on certain sites in certain categories to create a well-split labelled dataset for categorization, with the URL structure of the website giving us the label for the article.
+            </li>
+            <li>
+               Implemented a machine learning model utilizing support vector machines with a linear kernel and using document words as the feature. This was trained with the dataset above from the targeted crawling.
+            </li>
+            <li>
+               Implemented multi-label multi-class classification utilizing SVM where each news article could be predicted with our model to belong to multiple categories, and while training each article could also belong to multiple categories.
+            </li>
+            <li>
+               Served the front-end to display the top ranked news articles (using a query likelihood ranker) segregated into multiple categories.
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- Modal -->
   <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel">Responsive Web Design: Portfolio website</h4>
-              </div>
-              <div class="modal-body">
-                  <img class="img-responsive" src="img/project3.png">
-                  This was my first project in this class. I learned a lot about HTML and CSS.
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-          </div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Responsive Web Design: Portfolio website</h3>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/project3.png">
+          <ul class="modal-list">
+            <li>
+               This website was build using a responsive grid-based layout utilizing Bootstrap. This website works equally well across all screen sizes and devices.
+            </li>
+            <li>
+               Semantic elements have been used throughout the website. The images used in the website are themselves are responsive.
+            </li>
+            <li>
+               Implemented a machine learning model utilizing support vector machines with a linear kernel and using document words as the feature. This was trained with the dataset above from the targeted crawling.
+            </li>
+            <li>
+               A consistent set of CSS, HTML style and formatting rules were followed while coding up the website. Seperation of concerns between style and HTML.
+            </li>
+            <li>
+               Advanced components of Bootstrap were incorporated into the website like modals, navbars and Polymer components.
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
+    </div>
   </div>
   </body>
 </html>

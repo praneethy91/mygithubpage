@@ -42,6 +42,10 @@ hr {
     opacity: 0.8;
 }
 
+.modal-list {
+    margin-top: 15px;
+}
+
 /* Media queries default sizes for bootstrap 3.3.7*/
 @media (max-width:767px) {
     .title-logo {
