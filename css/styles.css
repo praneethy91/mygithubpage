@@ -30,24 +30,17 @@ hr {
     border-radius: 5px;
 }
 
-.intro-section {
-
-}
-
 /* Media queries default sizes for bootstrap 3.3.7*/
-@media (max-width:480px) {
+@media (max-width:767px) {
+    .title-logo {
+        max-width: 50px;
+    }
     .title-super, .title-works {
         font-size: 20px;
     }
 
     .title-sub, .title-project {
         font-size: 14px;
-    }
-}
-
-@media (max-width:767px) {
-    .title-logo {
-        max-width: 50px;
     }
 }
 
