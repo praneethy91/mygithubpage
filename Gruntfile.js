@@ -15,14 +15,6 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        watch: {
-            css: {
-                files: 'src/css/**/*.css',
-                tasks: [
-                    "cssmin"
-                    ]
-            }
-        },
         responsive_images: {
             myTask: {
                 options: {
@@ -35,12 +27,20 @@ module.exports = function (grunt) {
                     dest: 'dist/img/'
                 }]
             }
+        },
+        watch: {
+            css: {
+                files: 'src/css/**/*.css',
+                tasks: [
+                    "cssmin"
+                    ]
+            }
         }
     });
 
     grunt.registerTask('default', [
         'cssmin',
-        'watch',
-        'responsive_images'
+        'responsive_images',
+        'watch'
     ]);
 };
