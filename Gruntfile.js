@@ -1,7 +1,8 @@
 module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.initConfig({
         cssmin: {
@@ -14,6 +15,12 @@ module.exports = function (grunt) {
                   ext: '.min.css'
                 }]
             }
+        },
+        concat: {
+            dist: {
+               src: ['src/js/jquery.min.js', 'src/js/bootstrap.min.js', 'src/js/Imager.min.js', 'src/js/javascript.js'],
+               dest: 'dist/js/all.min.js'
+            },
         },
         responsive_images: {
             options: {
@@ -58,6 +65,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', [
         'cssmin',
+        'concat',
         'responsive_images',
         'watch'
     ]);
