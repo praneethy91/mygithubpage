@@ -11,7 +11,7 @@ module.exports = function (grunt) {
                dest: 'dist/js/all.min.js'
             },
             css: {
-               src: ['src/css/bootstrap.min.css', 'src/css/font-awesome.min.css', 'src/css/styles.css'],
+               src: ['src/css/googlefont.css', 'src/css/bootstrap.min.css', 'src/css/font-awesome.min.css', 'src/css/styles.css'],
                dest: 'src/css/all.css'
             },
         },

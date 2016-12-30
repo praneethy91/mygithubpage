@@ -190,21 +190,28 @@
         </div>
       </div>
     </div>
-    <link href="https://fonts.googleapis.com/css?family=Lato:200,300" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/all.min.css">
-    <!-- This is required here since we are using deffered loading to improve PageSpeed -->
+    <!-- This is required here since we are using deffered loading to improve PageSpeed for both CSS and JS -->
     <script type="text/javascript">
-      function downloadJSAtOnload() {
+      function downloadAtOnload() {
+        if (document.createStyleSheet){
+            document.createStyleSheet('dist/css/all.min.css');
+        }
+        else {
+            var stylesheet = document.createElement('link');
+            stylesheet.href = 'dist/css/all.min.css';
+            stylesheet.rel = 'stylesheet';
+            document.getElementsByTagName('head')[0].appendChild(stylesheet);
+        }
         var element = document.createElement("script");
         element.src = "dist/js/all.min.js";
         document.body.appendChild(element);
       }
       if (window.addEventListener)
-        window.addEventListener("load", downloadJSAtOnload, false);
+        window.addEventListener("load", downloadAtOnload, false);
       else if (window.attachEvent)
-        window.attachEvent("onload", downloadJSAtOnload);
+        window.attachEvent("onload", downloadAtOnload);
       else
-        window.onload = downloadJSAtOnload;
+        window.onload = downloadAtOnload;
     </script>
   </body>
 </html>
