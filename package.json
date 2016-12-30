@@ -1,0 +1,33 @@
+{
+  "name": "mygithubpage",
+  "version": "1.0.0",
+  "description": "portfolio website package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praneethy91/mygithubpage.git"
+  },
+  "keywords": [
+    "portfolio",
+    "grunt",
+    "responsive",
+    "web",
+    "design"
+  ],
+  "author": "praneethy91",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/praneethy91/mygithubpage/issues"
+  },
+  "homepage": "https://github.com/praneethy91/mygithubpage#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-responsive-images": "^1.10.1"
+  },
+  "dependencies": {}
+}
