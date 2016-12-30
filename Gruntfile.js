@@ -16,6 +16,24 @@ module.exports = function (grunt) {
             }
         },
         responsive_images: {
+            options: {
+                sizes: [{
+                        name: 'small',
+                        width: 320,
+                        quality: 90
+                    },
+                    {
+                        name: 'medium',
+                        width: 640,
+                        quality: 90
+                    },
+                    {
+                        name: "large",
+                        width: 1024,
+                        quality: 90
+                }],
+                newFilesOnly: false
+            },
             myTask: {
                 options: {
                     engine: 'im',
