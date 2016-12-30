@@ -5,22 +5,26 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.initConfig({
+        concat: {
+            js: {
+               src: ['src/js/jquery.min.js', 'src/js/bootstrap.min.js', 'src/js/Imager.min.js', 'src/js/javascript.js'],
+               dest: 'dist/js/all.min.js'
+            },
+            css: {
+               src: ['src/css/bootstrap.min.css', 'src/css/font-awesome.min.css', 'src/css/styles.css'],
+               dest: 'src/css/all.css'
+            },
+        },
         cssmin: {
             target: {
                 files: [{
                   expand: true,
                   cwd: 'src/css',
-                  src: ['*.css', '!*.min.css'],
+                  src: ['all.css', '!*.min.css'],
                   dest: 'dist/css',
                   ext: '.min.css'
                 }]
             }
-        },
-        concat: {
-            dist: {
-               src: ['src/js/jquery.min.js', 'src/js/bootstrap.min.js', 'src/js/Imager.min.js', 'src/js/javascript.js'],
-               dest: 'dist/js/all.min.js'
-            },
         },
         responsive_images: {
             options: {
@@ -57,7 +61,14 @@ module.exports = function (grunt) {
             css: {
                 files: 'src/css/**/*.css',
                 tasks: [
+                    "concat",
                     "cssmin"
+                    ]
+            },
+            js: {
+                files: 'src/js/**/*.js',
+                tasks: [
+                    "concat"
                     ]
             }
         }
