@@ -200,7 +200,7 @@
             var stylesheet = document.createElement('link');
             stylesheet.href = 'dist/css/all.min.css';
             stylesheet.rel = 'stylesheet';
-            document.getElementsByTagName('head')[0].appendChild(stylesheet);
+            document.body.appendChild(stylesheet);
         }
         var element = document.createElement("script");
         element.src = "dist/js/all.min.js";
