@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="dist/css/all.min.css">>
   </head>
   <body>
     <div class="container">
@@ -190,18 +191,9 @@
         </div>
       </div>
     </div>
-    <!-- This is required here since we are using deffered loading to improve PageSpeed for both CSS and JS -->
+    <!-- This is required here to load JS since we are using deffered loading to improve PageSpeed -->
     <script type="text/javascript">
       function downloadAtOnload() {
-        if (document.createStyleSheet){
-            document.createStyleSheet('dist/css/all.min.css');
-        }
-        else {
-            var stylesheet = document.createElement('link');
-            stylesheet.href = 'dist/css/all.min.css';
-            stylesheet.rel = 'stylesheet';
-            document.body.appendChild(stylesheet);
-        }
         var element = document.createElement("script");
         element.src = "dist/js/all.min.js";
         document.body.appendChild(element);
