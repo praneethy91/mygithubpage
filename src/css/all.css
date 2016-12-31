@@ -1615,7 +1615,7 @@ hr {
 }
 
 .social:hover {
-    font-size: 1.5em;
+    font-size: 1.7em;
  }
  .social {
     -webkit-transition: all 0.3s ease-out;
@@ -1632,6 +1632,12 @@ hr {
 
  .icon-social {
     padding: 0px 10px;
+    color: #fff;
+    font-size: 1.5em
+ }
+
+ .contact-text {
+    display: inline-block;
     color: #fff;
  }
 
