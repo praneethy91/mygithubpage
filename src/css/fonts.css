@@ -27,16 +27,19 @@
 .icon-facebook:before {
   content: "\f09a";
 }
+
 .icon-facebook-f:before {
   content: "\f09a";
 }
+
 .icon-github:before {
   content: "\f09b";
 }
+
 .icon-envelope:before {
   content: "\f0e0";
 }
+
 .icon-linkedin:before {
   content: "\f0e1";
 }
-

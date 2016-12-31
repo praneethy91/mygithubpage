@@ -9,21 +9,26 @@ module.exports = function (grunt) {
             js: {
                src: ['src/js/jquery.min.js', 'src/js/bootstrap.min.js'],
                dest: 'dist/js/all.min.js'
-            },
-            css: {
-               src: ['src/css/bootstrap.css', 'src/css/fonts.css', 'src/css/googlefont.css', 'src/css/styles.css'],
-               dest: 'src/css/all.css'
-            },
+            }
         },
         cssmin: {
             target: {
                 files: [{
                   expand: true,
-                  cwd: 'src/css',
-                  src: ['all.css', '!*.min.css'],
+                  cwd: 'dist/css',
+                  src: ['all.css', '!**/*.min.css'],
                   dest: 'dist/css',
                   ext: '.min.css'
                 }]
+            },
+            options: {
+                shorthandCompacting: false,
+                roundingPrecision: -1
+            },
+            combine: {
+                files: {
+                    'dist/css/all.css': ['src/css/bootstrap.css', 'src/css/fonts.css', 'src/css/googlefont.css', 'src/css/styles.css']
+                }
             }
         },
         responsive_images: {
@@ -61,7 +66,6 @@ module.exports = function (grunt) {
             css: {
                 files: 'src/css/**/*.css',
                 tasks: [
-                    "concat",
                     "cssmin"
                     ]
             },

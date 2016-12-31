@@ -1,92 +1,93 @@
 body {
-    font-family: 'Lato', sans-serif;
-    color: #676658;
-    font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  color: #676658;
+  font-weight: 300;
 }
 
 hr {
-    height: 1px;
-    color: #676658;
-    background-color: #676658;
+  height: 1px;
+  background-color: #676658;
 }
 
 .text-muted {
-    color: #BCBBBB;
+  color: #BCBBBB;
 }
 
 .text-thin {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .title-logo {
-    max-width: 80px;
-    margin-top: 15px;
+  max-width: 80px;
+  margin-top: 15px;
 }
 
 .image-project {
-    background-color: #829356;
-    box-shadow: 5px 5px 5px grey;
-    border: 1px solid grey;
-    border-radius: 5px;
-    transition: all ease .5s;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    -o-transition: all ease .5s;
-    -ms-transition: all ease .5s;
+  background-color: #829356;
+  box-shadow: 5px 5px 5px grey;
+  border: 1px solid grey;
+  border-radius: 5px;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  -ms-transition: all ease .5s;
 }
 
 .image-project:hover {
-    opacity: 0.5;
-    cursor: pointer;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .modal-list {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .github-header, .modal-title {
-    text-align: center;
+  text-align: center;
 }
 
 .social:hover {
-    font-size: 1.7em;
- }
- .social {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
- }
+  font-size: 1.7em;
+}
 
- footer {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #107896;
- }
+.social {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
 
- .icon-social {
-    padding: 0px 10px;
-    color: #fff;
-    font-size: 1.5em
- }
+footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #107896;
+}
 
- .contact-text {
-    display: inline-block;
-    color: #fff;
- }
+.icon-social {
+  padding: 0px 10px;
+  color: #fff;
+  font-size: 1.5em
+}
+
+.contact-text {
+  display: inline-block;
+  color: #fff;
+}
 
 /* Media queries default sizes for bootstrap 3.3.7*/
 @media (max-width:767px) {
-    .title-logo {
-        max-width: 50px;
-    }
-    .title-super, .title-works {
-        font-size: 20px;
-    }
+  .title-logo {
+    max-width: 50px;
+  }
 
-    .title-sub {
-        font-size: 14px;
-    }
+  .title-super, .title-works {
+    font-size: 20px;
+  }
+
+  .title-sub {
+    font-size: 14px;
+  }
 }
 
 @media (min-width:768px) {
