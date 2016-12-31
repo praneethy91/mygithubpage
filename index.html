@@ -7,14 +7,16 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="dist/css/all.min.css">
     <!-- Javascript file is deferred loading to improve PageSpeed scores -->
+    <script src="dist/js/all.min.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header class="row">
-        <div class="col-md-2 col-sm-2 col-xs-2">
+        <div class="col-xs-2">
           <img class="img-responsive center-block title-logo" sizes="100vw" src="dist/img/logo-small.png" srcset="dist/img/logo-small.png 320w, dist/img/logo-medium.png 640w, dist/img/logo-large.png 1024w" alt="My Portfolio Logo">
         </div>
-        <div class="col-md-10 col-sm-10 col-xs-10 text-uppercase text-right">
+
+        <div class="col-xs-10 text-uppercase text-right">
           <h1 class="text-thin title-super">Praneeth Yenugutala</h1>
           <h4 class="title-sub">Coding Ninja</h4>
         </div>
@@ -24,58 +26,67 @@
           <hr>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-12">
           <img class="img-responsive center-block" sizes="100vw" src="dist/img/header-large.jpg" srcset="dist/img/header-small.jpg 320w, dist/img/header-medium.jpg 640w, dist/img/header-large.jpg 1024w" alt="Writing code with a cup of coffee">
         </div>
       </div>
+
       <main>
-        <section class="row text-center">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="text-muted title-works">Recent Projects</h2>
-            </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-muted title-works">Recent Projects</h2>
+            <p class="projects-text">
+              Click on each of the projects below to reveal more information. For a complete list of projects, my past work and to know more about me, follow the links in the contact section at the bottom of the page.
+            </p>
           </div>
+        </div>
+
+        <section class="row text-center">
           <article class="col-md-4 col-sm-6">
             <a data-toggle="modal" data-target="#project2">
-              <img class="img-responsive center-block image-project" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project2-large.png" srcset="dist/img/project2-small.jpg 320w, dist/img/project2-medium.png 640w, dist/img/project2-large.png 1024w" alt="Image of Information retrieval">
+              <img class="img-responsive center-block image-project" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project2-large.png" srcset="dist/img/project2-small.png 320w, dist/img/project2-medium.png 640w, dist/img/project2-large.png 1024w" alt="Image of Information retrieval">
             </a>
             <h3 class="title-project">Information retrieval: Web Search Engine</h3>
           </article>
+
           <article class="col-md-4 col-sm-6">
             <a data-toggle="modal" data-target="#project1">
-              <img class="img-responsive center-block image-project" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project1-large.png" srcset="dist/img/project1-small.jpg 320w, dist/img/project1-medium.png 640w, dist/img/project1-large.png 1024w" alt="Image of Text classification using machine learning">
+              <img class="img-responsive center-block image-project" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project1-large.png" srcset="dist/img/project1-small.png 320w, dist/img/project1-medium.png 640w, dist/img/project1-large.png 1024w" alt="Image of Text classification using machine learning">
             </a>
             <h3 class="title-project">Machine Learning: News Article Classification</h3>
           </article>
+
           <article class="col-md-4 col-sm-6">
             <a data-toggle="modal" data-target="#project3">
-              <img class="img-responsive center-block image-project" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project3-large.png" srcset="dist/img/project3-small.jpg 320w, dist/img/project3-medium.png 640w, dist/img/project3-large.png 1024w" alt="Image of Responsive Web design">
+              <img class="img-responsive center-block image-project" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project3-large.png" srcset="dist/img/project3-small.png 320w, dist/img/project3-medium.png 640w, dist/img/project3-large.png 1024w" alt="Image of Responsive Web design">
             </a>
             <h3 class="title-project">Responsive Web Design: Portfolio website</h3>
           </article>
         </section>
       </main>
-    </div>
-    <footer class="row text-center center-block">
-      <div class="container">
+      <footer class="row text-center center-block">
         <div class="col-md-12">
           <h3 class="contact-text">Contact At:</h3>
-          <a href="https://www.linkedin.com/in/praneeth-yenugutala-1a3277aa" class="social">
+          <a href="https://www.linkedin.com/in/praneeth-yenugutala-1a3277aa" class="social" target="_blank">
             <span class="icon-linkedin icon-social"></span>
           </a>
-          <a href="https://github.com/praneethy91" class="social">
+
+          <a href="https://github.com/praneethy91" class="social" target="_blank">
             <span class="icon-github icon-social"></span>
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100014695477524" class="social">
+
+          <a href="https://www.facebook.com/profile.php?id=100014695477524" class="social" target="_blank">
             <span class="icon-facebook icon-social"></span>
           </a>
-          <a href="mailto:praneeth@nyu.edu" class="social">
+
+          <a href="mailto:praneeth@nyu.edu" class="social" target="_blank">
             <span class="icon-envelope icon-social"></span>
           </a>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <!-- Modal Project2-->
     <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -84,10 +95,11 @@
           <div class="modal-header">
             <h3 class="modal-title">Information retrieval: Web Search Engine</h3>
           </div>
+
           <div class="modal-body">
-            <img class="img-responsive center-block" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project2-large.png" srcset="dist/img/project2-small.jpg 320w, dist/img/project2-medium.png 640w, dist/img/project2-large.png 1024w" alt="">
+            <img class="img-responsive center-block" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project2-large.png" srcset="dist/img/project2-small.png 320w, dist/img/project2-medium.png 640w, dist/img/project2-large.png 1024w" alt="">
             <h3 class="github-header">
-              <a href="https://github.com/praneethy91/websearchenginesnyu/releases/tag/v2.0.0-hw3">GitHub Link To The Project</a>
+              <a href="https://github.com/praneethy91/websearchenginesnyu/releases/tag/v2.0.0-hw3" target="_blank">GitHub Link To The Project</a>
             </h3>
             <ul class="modal-list">
               <li>
@@ -128,10 +140,12 @@
             <h3 class="modal-title">Machine Learning: News Article Classification</h3>
           </div>
           <div class="modal-body">
-            <img class="img-responsive center-block image-project" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project1-large.png" srcset="dist/img/project1-small.jpg 320w, dist/img/project1-medium.png 640w, dist/img/project1-large.png 1024w" alt="">
+            <img class="img-responsive center-block image-project" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project1-large.png" srcset="dist/img/project1-small.png 320w, dist/img/project1-medium.png 640w, dist/img/project1-large.png 1024w" alt="">
+
             <h3 class="github-header">
-              <a href="https://github.com/praneethy91/websearchenginesnyu/releases/tag/v10.0.0-ML">GitHub Link To The Project</a>
+              <a href="https://github.com/praneethy91/websearchenginesnyu/releases/tag/v10.0.0-ML" target="_blank">GitHub Link To The Project</a>
             </h3>
+
             <ul class="modal-list">
               <li>
                  This advanced component was built on top of the web search engine project.
@@ -168,25 +182,28 @@
             <h3 class="modal-title">Responsive Web Design: Portfolio website</h3>
           </div>
           <div class="modal-body">
-            <img class="img-responsive center-block" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project3-large.png" srcset="dist/img/project3-small.jpg 320w, dist/img/project3-medium.png 640w, dist/img/project3-large.png 1024w" alt="">s
+            <img class="img-responsive center-block" sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 992px) 33vw" src="dist/img/project3-large.png" srcset="dist/img/project3-small.png 320w, dist/img/project3-medium.png 640w, dist/img/project3-large.png 1024w" alt="">s
             <h3 class="github-header">
-              <a href="https://github.com/praneethy91/mygithubpage">GitHub Link To The Project</a>
+              <a href="https://github.com/praneethy91/mygithubpage" target="_blank">GitHub Link To The Project</a>
             </h3>
             <ul class="modal-list">
               <li>
-                 This website was build using a responsive grid-based layout utilizing Bootstrap. This website works equally well across all screen sizes and devices.
+                 This website was build using a responsive grid-based layout utilizing Bootstrap. This website works equally well across all screen sizes and devices in a responsive way.
               </li>
               <li>
-                 Semantic elements have been used throughout the website. The images used in the website are themselves are responsive.
+                 Semantic elements have been used throughout the website. The images and fonts used in the website are themselves are responsive.
               </li>
               <li>
-                 Implemented a machine learning model utilizing support vector machines with a linear kernel and using document words as the feature. This was trained with the dataset above from the targeted crawling.
+                 Images have been optimized using srcset and compression. Serve different image resolutions and quality according to viewport width and relative width of image in the viewport in a responsive manner.
+              </li>
+              <li>
+                 A grunt workflow has been incorporated while building the website, utilizing various grunt plugins to optimize the development workflow and performance of the website.
               </li>
               <li>
                  A consistent set of CSS, HTML style and formatting rules were followed while coding up the website. Seperation of concerns between style and HTML.
               </li>
               <li>
-                 Advanced components of Bootstrap were incorporated into the website like modals, navbars and Polymer components.
+                 Advanced components of Bootstrap were incorporated into the website like modals. Optimized website and resource fetching for website to improve Google pagespeed scores.
               </li>
             </ul>
           </div>
@@ -196,20 +213,5 @@
         </div>
       </div>
     </div>
-
-    <!-- This is required here to load JS since we are using deffered loading to improve PageSpeed -->
-    <script>
-      function downloadAtOnload() {
-        var element = document.createElement("script");
-        element.src = "dist/js/all.min.js";
-        document.body.appendChild(element);
-      }
-      if (window.addEventListener)
-        window.addEventListener("load", downloadAtOnload, false);
-      else if (window.attachEvent)
-        window.attachEvent("onload", downloadAtOnload);
-      else
-        window.onload = downloadAtOnload;
-    </script>
   </body>
 </html>

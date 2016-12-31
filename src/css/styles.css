@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #676658;
   font-weight: 300;
 }
@@ -10,7 +10,7 @@ hr {
 }
 
 .text-muted {
-  color: #BCBBBB;
+  color: #bcbbbb;
 }
 
 .text-thin {
@@ -43,7 +43,8 @@ hr {
   margin-top: 15px;
 }
 
-.github-header, .modal-title {
+.github-header,
+.modal-title {
   text-align: center;
 }
 
@@ -81,7 +82,9 @@ footer {
     max-width: 50px;
   }
 
-  .title-super, .title-works, .title-project {
+  .title-super,
+  .title-works,
+  .title-project {
     font-size: 20px;
   }
 
@@ -91,6 +94,9 @@ footer {
 }
 
 @media (min-width:768px) {
+  .projects-text {
+    font-size: 16px;
+  }
 }
 
 @media (min-width:992px) {
