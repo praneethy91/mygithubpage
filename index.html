@@ -191,8 +191,17 @@
         </div>
       </div>
     </div>
+    <script>
+      new Imager({
+          availableWidths: {
+              320: 'small',
+              640: 'medium',
+              1024: 'large'
+          }
+      });
+    </script>
     <!-- This is required here to load JS since we are using deffered loading to improve PageSpeed -->
-    <script type="text/javascript">
+    <script>
       function downloadAtOnload() {
         var element = document.createElement("script");
         element.src = "dist/js/all.min.js";
