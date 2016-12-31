@@ -41,7 +41,7 @@ module.exports = function (grunt) {
                     {
                         name: "large",
                         width: 1024,
-                        quality: 90
+                        quality: 80
                 }],
                 newFilesOnly: false
             },
