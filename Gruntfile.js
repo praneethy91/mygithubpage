@@ -7,7 +7,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         concat: {
             js: {
-               src: ['src/js/jquery.min.js', 'src/js/bootstrap.min.js', 'src/js/Imager.min.js'],
+               src: ['src/js/jquery.min.js', 'src/js/bootstrap.min.js'],
                dest: 'dist/js/all.min.js'
             },
             css: {
@@ -31,12 +31,12 @@ module.exports = function (grunt) {
                 sizes: [{
                         name: 'small',
                         width: 320,
-                        quality: 90
+                        quality: 80
                     },
                     {
                         name: 'medium',
                         width: 640,
-                        quality: 90
+                        quality: 80
                     },
                     {
                         name: "large",
